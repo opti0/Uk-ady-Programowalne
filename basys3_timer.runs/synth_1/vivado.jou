@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 19 10:03:42 2022
+# Process ID: 15376
+# Current directory: C:/Users/Maciek/Documents/basys3_timer/basys3_timer.runs/synth_1
+# Command line: vivado.exe -log STEROWNIK_WYSWIETLACZ.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source STEROWNIK_WYSWIETLACZ.tcl
+# Log file: C:/Users/Maciek/Documents/basys3_timer/basys3_timer.runs/synth_1/STEROWNIK_WYSWIETLACZ.vds
+# Journal file: C:/Users/Maciek/Documents/basys3_timer/basys3_timer.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source STEROWNIK_WYSWIETLACZ.tcl -notrace

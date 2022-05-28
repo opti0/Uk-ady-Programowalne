@@ -56,7 +56,35 @@ Port ( EN : in STD_LOGIC;
        Q : out STD_LOGIC_VECTOR (3 downto 0));
 end component;
 
+component STEROWNIK_WYSWIETLACZ
+ Port ( D0 : in STD_LOGIC_VECTOR (3 downto 0);
+           D1 : in STD_LOGIC_VECTOR (3 downto 0);
+           D2 : in STD_LOGIC_VECTOR (3 downto 0);
+           D3 : in STD_LOGIC_VECTOR (3 downto 0);
+           DP : in STD_LOGIC_VECTOR (3 downto 0);
+           EN : in STD_LOGIC;
+           CLK : in STD_LOGIC;
+           RESET : in STD_LOGIC;
+           SEG : out STD_LOGIC_VECTOR (7 downto 0);
+           AN : out STD_LOGIC_VECTOR (3 downto 0));
+end component;
+
+--signal declaration
+
+signal CLKD: std_logic;
+signal D0 : STD_LOGIC_VECTOR (3 downto 0);
+signal D1 : STD_LOGIC_VECTOR (3 downto 0);
+signal D2 : STD_LOGIC_VECTOR (3 downto 0);
+signal D3 : STD_LOGIC_VECTOR (3 downto 0);
+signal DP : STD_LOGIC_VECTOR (3 downto 0);
+
 begin
+f0: FREQ_DEV port map (clk => CLK, CLKD => CLKD);
+b0: BCDCNT port map (EN => '1', CLK => CLKD, RESET => btnC , Q => D0);
+b1: BCDCNT port map (EN => '1', CLK => CLKD, RESET => btnC , Q => D1);
+b2: BCDCNT port map (EN => '1', CLK => CLKD, RESET => btnC , Q => D2);
+b3: BCDCNT port map (EN => '1', CLK => CLKD, RESET => btnC , Q => D3);
+s0: STEROWNIK_WYSWIETLACZ port map (SEG => SEG, AN => AN , D0 => D0, D1 => D1, D2 => D2, D3 => D3, DP => "1000", EN => '1', CLK => CLKD, RESET => btnC);
 
 
 end Behavioral;

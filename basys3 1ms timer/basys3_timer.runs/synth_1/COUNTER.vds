@@ -1,14 +1,14 @@
-
-*** Running vivado
-    with args -log COUNTER.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source COUNTER.tcl
-
-
-
-****** Vivado v2020.2 (64-bit)
-  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
-  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat May 28 20:44:45 2022
+# Process ID: 8752
+# Current directory: C:/Users/Maciek/Documents/uklady_programowalne/basys3 1ms timer/basys3_timer.runs/synth_1
+# Command line: vivado.exe -log COUNTER.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source COUNTER.tcl
+# Log file: C:/Users/Maciek/Documents/uklady_programowalne/basys3 1ms timer/basys3_timer.runs/synth_1/COUNTER.vds
+# Journal file: C:/Users/Maciek/Documents/uklady_programowalne/basys3 1ms timer/basys3_timer.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
 source COUNTER.tcl -notrace
 Command: synth_design -top COUNTER -part xc7a35tcpg236-1
 Starting synth_design

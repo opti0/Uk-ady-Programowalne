@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log STEROWNIK_WYSWIETLACZ.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source STEROWNIK_WYSWIETLACZ.tcl" );
+         "-log COUNTER.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source COUNTER.tcl" );
 
 
 

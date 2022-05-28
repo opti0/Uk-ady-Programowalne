@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Maciek/Documents/basys3_timer/basys3_timer.runs/synth_1'
+HD_PWD='C:/Users/Maciek/Documents/uklady_programowalne/basys3 1ms timer/basys3_timer.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log STEROWNIK_WYSWIETLACZ.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source STEROWNIK_WYSWIETLACZ.tcl
+EAStep vivado -log COUNTER.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source COUNTER.tcl

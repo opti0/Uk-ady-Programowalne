@@ -1,0 +1,1 @@
+-wto "b398d438e3b94c6ab436741471b9d77f" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "BINTO7SEG_behav" "xil_defaultlib.BINTO7SEG" -log "elaborate.log" 

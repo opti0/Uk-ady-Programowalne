@@ -38,14 +38,16 @@ entity FREQ_DEV is
 end FREQ_DEV;
 
 architecture Behavioral of FREQ_DEV is
-signal count: unsigned (16 downto 0);
+signal count: unsigned (15 downto 0);
+signal guard: std_logic;
 begin
 process(CLK)
     begin
     if rising_edge(CLK) then
         count <= count + 1;
         if count = 49999 then
-            CLKD <= not CLKD;
+            guard <= not guard;
+            CLKD <= guard;
             count <= "0000000000000000";
             end if;
     end if;

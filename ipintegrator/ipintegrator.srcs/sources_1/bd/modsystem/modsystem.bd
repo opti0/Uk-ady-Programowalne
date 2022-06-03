@@ -1,0 +1,264 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xF0D72DB70475C52",
+      "device": "xc7a12ticsg325-1L",
+      "gen_directory": "../../../../ipintegrator.gen/sources_1/bd/modsystem",
+      "name": "modsystem",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "xbip_dsp48_macro_0": "",
+      "xlslice_0": "",
+      "c_counter_binary_0": "",
+      "xlslice_1": "",
+      "modulator_0": ""
+    },
+    "ports": {
+      "DIN": {
+        "direction": "I"
+      },
+      "RESET": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "DOUT": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "CLK": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "modsystem_CLK",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "xbip_dsp48_macro_0": {
+        "vlnv": "xilinx.com:ip:xbip_dsp48_macro:3.0",
+        "xci_name": "modsystem_xbip_dsp48_macro_0_0",
+        "xci_path": "ip\\modsystem_xbip_dsp48_macro_0_0\\modsystem_xbip_dsp48_macro_0_0.xci",
+        "inst_hier_path": "xbip_dsp48_macro_0",
+        "parameters": {
+          "a_width": {
+            "value": "8"
+          },
+          "areg_3": {
+            "value": "true"
+          },
+          "areg_4": {
+            "value": "true"
+          },
+          "b_width": {
+            "value": "8"
+          },
+          "breg_3": {
+            "value": "true"
+          },
+          "breg_4": {
+            "value": "true"
+          },
+          "creg_3": {
+            "value": "false"
+          },
+          "creg_4": {
+            "value": "false"
+          },
+          "creg_5": {
+            "value": "false"
+          },
+          "instruction1": {
+            "value": "A*B"
+          },
+          "mreg_5": {
+            "value": "true"
+          },
+          "p_binarywidth": {
+            "value": "0"
+          },
+          "p_full_width": {
+            "value": "16"
+          },
+          "p_width": {
+            "value": "16"
+          },
+          "preg_6": {
+            "value": "true"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "modsystem_xlslice_0_0",
+        "xci_path": "ip\\modsystem_xlslice_0_0\\modsystem_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "15"
+          },
+          "DIN_TO": {
+            "value": "8"
+          },
+          "DIN_WIDTH": {
+            "value": "16"
+          },
+          "DOUT_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "c_counter_binary_0": {
+        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
+        "xci_name": "modsystem_c_counter_binary_0_0",
+        "xci_path": "ip\\modsystem_c_counter_binary_0_0\\modsystem_c_counter_binary_0_0.xci",
+        "inst_hier_path": "c_counter_binary_0",
+        "parameters": {
+          "Output_Width": {
+            "value": "4"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "modsystem_xlslice_1_0",
+        "xci_path": "ip\\modsystem_xlslice_1_0\\modsystem_xlslice_1_0.xci",
+        "inst_hier_path": "xlslice_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "3"
+          },
+          "DIN_TO": {
+            "value": "3"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "modulator_0": {
+        "vlnv": "xilinx.com:module_ref:modulator:1.0",
+        "xci_name": "modsystem_modulator_0_0",
+        "xci_path": "ip\\modsystem_modulator_0_0\\modsystem_modulator_0_0.xci",
+        "inst_hier_path": "modulator_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "modulator",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "RESET": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RESET",
+                "value_src": "constant"
+              }
+            }
+          },
+          "O": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "modulator_0_O": {
+        "ports": [
+          "modulator_0/O",
+          "xbip_dsp48_macro_0/A"
+        ]
+      },
+      "DIN_1": {
+        "ports": [
+          "DIN",
+          "xbip_dsp48_macro_0/B"
+        ]
+      },
+      "RESET_1": {
+        "ports": [
+          "RESET",
+          "modulator_0/RESET"
+        ]
+      },
+      "xbip_dsp48_macro_0_P": {
+        "ports": [
+          "xbip_dsp48_macro_0/P",
+          "xlslice_0/Din"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "DOUT"
+        ]
+      },
+      "CLK_1": {
+        "ports": [
+          "CLK",
+          "xbip_dsp48_macro_0/CLK",
+          "c_counter_binary_0/CLK"
+        ]
+      },
+      "c_counter_binary_0_Q": {
+        "ports": [
+          "c_counter_binary_0/Q",
+          "xlslice_1/Din"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "modulator_0/CLK"
+        ]
+      }
+    }
+  }
+}

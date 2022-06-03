@@ -1,1 +1,0 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/Maciek/Documents/uklady_programowalne/basys3 1ms timer/basys3_timer.srcs/constrs_1/imports/Documents/basys3-master.xdc} rfile:../../../../../basys3_timer.srcs/constrs_1/imports/Documents/basys3-master.xdc id:1} [current_design]

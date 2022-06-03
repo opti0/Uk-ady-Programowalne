@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jun  3 17:52:12 2022
+# Process ID: 1392
+# Current directory: C:/Users/Maciek/Documents/uklady_programowalne/ipintegrator/ipintegrator.runs/modsystem_c_counter_binary_0_0_synth_1
+# Command line: vivado.exe -log modsystem_c_counter_binary_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source modsystem_c_counter_binary_0_0.tcl
+# Log file: C:/Users/Maciek/Documents/uklady_programowalne/ipintegrator/ipintegrator.runs/modsystem_c_counter_binary_0_0_synth_1/modsystem_c_counter_binary_0_0.vds
+# Journal file: C:/Users/Maciek/Documents/uklady_programowalne/ipintegrator/ipintegrator.runs/modsystem_c_counter_binary_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source modsystem_c_counter_binary_0_0.tcl -notrace

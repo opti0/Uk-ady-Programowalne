@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jun 14 21:00:29 2022
+# Process ID: 5100
+# Current directory: C:/Users/Maciek/Documents/uklady_programowalne/timer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16040 C:\Users\Maciek\Documents\uklady_programowalne\timer\timer.xpr
+# Log file: C:/Users/Maciek/Documents/uklady_programowalne/timer/vivado.log
+# Journal file: C:/Users/Maciek/Documents/uklady_programowalne/timer\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Maciek/Documents/uklady_programowalne/timer/timer.xpr
+INFO: [Project 1-313] Project file moved from 'D:/UP-253257/timer' since last save.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Student/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store'.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/Maciek/Documents/uklady_programowalne/timer/timer.gen/sources_1', nor could it be found using path 'D:/UP-253257/timer/timer.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 1179.895 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 14 21:03:03 2022...

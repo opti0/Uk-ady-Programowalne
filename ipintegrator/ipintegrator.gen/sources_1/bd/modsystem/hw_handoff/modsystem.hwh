@@ -1,14 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jun  3 17:58:57 2022" VIVADOVERSION="2020.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jun  9 09:34:33 2022" VIVADOVERSION="2020.2">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a12ti" NAME="modsystem" PACKAGE="csg325" SPEEDGRADE="-1L"/>
 
   <EXTERNALPORTS>
-    <PORT DIR="I" NAME="DIN" SIGIS="undef" SIGNAME="External_Ports_DIN">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="xbip_dsp48_macro_0" PORT="B"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT DIR="I" NAME="RESET" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_RESET">
       <CONNECTIONS>
         <CONNECTION INSTANCE="modulator_0" PORT="RESET"/>
@@ -23,6 +18,11 @@
       <CONNECTIONS>
         <CONNECTION INSTANCE="xbip_dsp48_macro_0" PORT="CLK"/>
         <CONNECTION INSTANCE="c_counter_binary_0" PORT="CLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="DIN" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_DIN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xbip_dsp48_macro_0" PORT="B"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>

@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ipintegrator.srcs/sources_1/new/modulator.vhd" \
+"../../../../ipintegrator.ip_user_files/bd/modsystem/ip/modsystem_xbip_dsp48_macro_0_0/sim/modsystem_xbip_dsp48_macro_0_0.vhd" \
+"../../../../ipintegrator.ip_user_files/bd/modsystem/ip/modsystem_c_counter_binary_0_0/sim/modsystem_c_counter_binary_0_0.vhd" \
+"../../../../ipintegrator.ip_user_files/bd/modsystem/ip/modsystem_modulator_0_0/sim/modsystem_modulator_0_0.vhd" \
+"../../../../ipintegrator.ip_user_files/bd/modsystem/sim/modsystem.vhd" \
+"../../../../ipintegrator.srcs/sim_1/new/test.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ipintegrator.ip_user_files/bd/modsystem/ip/modsystem_xlslice_0_0/sim/modsystem_xlslice_0_0.v" \
+"../../../../ipintegrator.ip_user_files/bd/modsystem/ip/modsystem_xlslice_1_0/sim/modsystem_xlslice_1_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

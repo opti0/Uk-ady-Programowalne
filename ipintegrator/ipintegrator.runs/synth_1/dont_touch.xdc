@@ -4,9 +4,6 @@
 # Block Designs: bd/modsystem/modsystem.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==modsystem || ORIG_REF_NAME==modsystem} -quiet] -quiet
 
-# IP: bd/modsystem/ip/modsystem_modulator_0_0/modsystem_modulator_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==modsystem_modulator_0_0 || ORIG_REF_NAME==modsystem_modulator_0_0} -quiet] -quiet
-
 # IP: bd/modsystem/ip/modsystem_xbip_dsp48_macro_0_0/modsystem_xbip_dsp48_macro_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==modsystem_xbip_dsp48_macro_0_0 || ORIG_REF_NAME==modsystem_xbip_dsp48_macro_0_0} -quiet] -quiet
 
@@ -18,5 +15,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==modsystem_c
 
 # IP: bd/modsystem/ip/modsystem_xlslice_1_0/modsystem_xlslice_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==modsystem_xlslice_1_0 || ORIG_REF_NAME==modsystem_xlslice_1_0} -quiet] -quiet
+
+# IP: bd/modsystem/ip/modsystem_modulator_0_0/modsystem_modulator_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==modsystem_modulator_0_0 || ORIG_REF_NAME==modsystem_modulator_0_0} -quiet] -quiet
 
 # XDC: c:/Users/Maciek/Documents/uklady_programowalne/ipintegrator/ipintegrator.gen/sources_1/bd/modsystem/modsystem_ooc.xdc

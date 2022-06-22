@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xF0D72DB70475C52",
+      "boundary_crc": "0xC67F02D8018D98D5",
       "device": "xc7a12ticsg325-1L",
       "gen_directory": "../../../../ipintegrator.gen/sources_1/bd/modsystem",
       "name": "modsystem",
@@ -18,9 +18,6 @@
       "modulator_0": ""
     },
     "ports": {
-      "DIN": {
-        "direction": "I"
-      },
       "RESET": {
         "type": "rst",
         "direction": "I",
@@ -60,6 +57,18 @@
           },
           "PHASE": {
             "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "DIN": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
             "value_src": "default"
           }
         }
@@ -216,12 +225,6 @@
           "xbip_dsp48_macro_0/A"
         ]
       },
-      "DIN_1": {
-        "ports": [
-          "DIN",
-          "xbip_dsp48_macro_0/B"
-        ]
-      },
       "RESET_1": {
         "ports": [
           "RESET",
@@ -257,6 +260,12 @@
         "ports": [
           "xlslice_1/Dout",
           "modulator_0/CLK"
+        ]
+      },
+      "DIN_1": {
+        "ports": [
+          "DIN",
+          "xbip_dsp48_macro_0/B"
         ]
       }
     }

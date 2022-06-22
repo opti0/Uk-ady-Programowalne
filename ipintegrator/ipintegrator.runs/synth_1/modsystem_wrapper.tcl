@@ -85,7 +85,7 @@ set_property ip_output_repo c:/Users/Maciek/Documents/uklady_programowalne/ipint
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib c:/Users/Maciek/Documents/uklady_programowalne/ipintegrator/ipintegrator.gen/sources_1/bd/modsystem/hdl/modsystem_wrapper.vhd
+read_vhdl -library xil_defaultlib C:/Users/Maciek/Documents/uklady_programowalne/ipintegrator/ipintegrator.gen/sources_1/bd/modsystem/hdl/modsystem_wrapper.vhd
 add_files C:/Users/Maciek/Documents/uklady_programowalne/ipintegrator/ipintegrator.srcs/sources_1/bd/modsystem/modsystem.bd
 set_property used_in_implementation false [get_files -all c:/Users/Maciek/Documents/uklady_programowalne/ipintegrator/ipintegrator.gen/sources_1/bd/modsystem/ip/modsystem_xbip_dsp48_macro_0_0/modsystem_xbip_dsp48_macro_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Maciek/Documents/uklady_programowalne/ipintegrator/ipintegrator.gen/sources_1/bd/modsystem/ip/modsystem_c_counter_binary_0_0/modsystem_c_counter_binary_0_0_ooc.xdc]

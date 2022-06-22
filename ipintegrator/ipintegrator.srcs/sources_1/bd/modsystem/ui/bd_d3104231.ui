@@ -1,30 +1,30 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.13647",
-   "Default View_TopLeft":"-87,-195",
+   "Default View_ScaleFactor":"1.09812",
+   "Default View_TopLeft":"-108,-236",
    "ExpandedHierarchyInLayout":"",
    "commentid":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-preplace port DIN -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
-preplace port RESET -pg 1 -lvl 0 -x 0 -y 50 -defaultsOSRD
-preplace port CLK -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
-preplace portBus DOUT -pg 1 -lvl 6 -x 1030 -y 100 -defaultsOSRD
-preplace inst xbip_dsp48_macro_0 -pg 1 -lvl 4 -x 710 -y 100 -defaultsOSRD
-preplace inst xlslice_0 -pg 1 -lvl 5 -x 910 -y 100 -defaultsOSRD
+preplace port RESET -pg 1 -lvl 0 -x -10 -y 50 -defaultsOSRD
+preplace port CLK -pg 1 -lvl 0 -x -10 -y 20 -defaultsOSRD
+preplace portBus DOUT -pg 1 -lvl 6 -x 1050 -y 100 -defaultsOSRD
+preplace portBus DIN -pg 1 -lvl 0 -x -10 -y 120 -defaultsOSRD
+preplace inst xbip_dsp48_macro_0 -pg 1 -lvl 4 -x 720 -y 100 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 5 -x 920 -y 100 -defaultsOSRD
 preplace inst c_counter_binary_0 -pg 1 -lvl 1 -x 110 -y 110 -defaultsOSRD
 preplace inst xlslice_1 -pg 1 -lvl 2 -x 310 -y 110 -defaultsOSRD
 preplace inst modulator_0 -pg 1 -lvl 3 -x 510 -y 100 -defaultsOSRD
 preplace netloc modulator_0_O 1 3 1 N 100
-preplace netloc DIN_1 1 0 4 NJ 170 NJ 170 NJ 170 610J
 preplace netloc RESET_1 1 0 3 NJ 50 NJ 50 410J
 preplace netloc xbip_dsp48_macro_0_P 1 4 1 NJ 100
 preplace netloc xlslice_0_Dout 1 5 1 NJ 100
-preplace netloc CLK_1 1 0 4 20 30 NJ 30 NJ 30 610J
+preplace netloc CLK_1 1 0 4 10 30 NJ 30 NJ 30 610J
 preplace netloc c_counter_binary_0_Q 1 1 1 NJ 110
 preplace netloc xlslice_1_Dout 1 2 1 NJ 110
-levelinfo -pg 1 0 110 310 510 710 910 1030
-pagesize -pg 1 -db -bbox -sgen -90 0 1150 190
+preplace netloc DIN_1 1 0 4 10J 170 NJ 170 NJ 170 610
+levelinfo -pg 1 -10 110 310 510 720 920 1050
+pagesize -pg 1 -db -bbox -sgen -110 0 1170 190
 "
 }
-
+0

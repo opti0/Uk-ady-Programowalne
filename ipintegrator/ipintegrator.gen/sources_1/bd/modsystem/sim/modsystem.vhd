@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Fri Jun  3 17:58:57 2022
+--Date        : Thu Jun  9 09:34:33 2022
 --Host        : DESKTOP-L2NDSED running 64-bit major release  (build 9200)
 --Command     : generate_target modsystem.bd
 --Design      : modsystem
@@ -14,7 +14,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity modsystem is
   port (
     CLK : in STD_LOGIC;
-    DIN : in STD_LOGIC;
+    DIN : in STD_LOGIC_VECTOR ( 7 downto 0 );
     DOUT : out STD_LOGIC_VECTOR ( 7 downto 0 );
     RESET : in STD_LOGIC
   );
@@ -59,7 +59,7 @@ architecture STRUCTURE of modsystem is
   );
   end component modsystem_modulator_0_0;
   signal CLK_1 : STD_LOGIC;
-  signal DIN_1 : STD_LOGIC;
+  signal DIN_1 : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal RESET_1 : STD_LOGIC;
   signal c_counter_binary_0_Q : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal modulator_0_O : STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -72,9 +72,11 @@ architecture STRUCTURE of modsystem is
   attribute X_INTERFACE_PARAMETER of CLK : signal is "XIL_INTERFACENAME CLK.CLK, CLK_DOMAIN modsystem_CLK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000";
   attribute X_INTERFACE_INFO of RESET : signal is "xilinx.com:signal:reset:1.0 RST.RESET RST";
   attribute X_INTERFACE_PARAMETER of RESET : signal is "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_HIGH";
+  attribute X_INTERFACE_INFO of DIN : signal is "xilinx.com:signal:data:1.0 DATA.DIN DATA";
+  attribute X_INTERFACE_PARAMETER of DIN : signal is "XIL_INTERFACENAME DATA.DIN, LAYERED_METADATA undef";
 begin
   CLK_1 <= CLK;
-  DIN_1 <= DIN;
+  DIN_1(7 downto 0) <= DIN(7 downto 0);
   DOUT(7 downto 0) <= xlslice_0_Dout(7 downto 0);
   RESET_1 <= RESET;
 c_counter_binary_0: component modsystem_c_counter_binary_0_0
@@ -91,14 +93,7 @@ modulator_0: component modsystem_modulator_0_0
 xbip_dsp48_macro_0: component modsystem_xbip_dsp48_macro_0_0
      port map (
       A(7 downto 0) => modulator_0_O(7 downto 0),
-      B(7) => DIN_1,
-      B(6) => DIN_1,
-      B(5) => DIN_1,
-      B(4) => DIN_1,
-      B(3) => DIN_1,
-      B(2) => DIN_1,
-      B(1) => DIN_1,
-      B(0) => DIN_1,
+      B(7 downto 0) => DIN_1(7 downto 0),
       CLK => CLK_1,
       P(15 downto 0) => xbip_dsp48_macro_0_P(15 downto 0)
     );

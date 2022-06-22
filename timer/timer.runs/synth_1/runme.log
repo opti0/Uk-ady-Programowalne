@@ -1,0 +1,256 @@
+
+*** Running vivado
+    with args -log COUNTER.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source COUNTER.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source COUNTER.tcl -notrace
+Command: synth_design -top COUNTER -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9608
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1008.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'COUNTER' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/COUNTER.vhd:42]
+INFO: [Synth 8-3491] module 'FREQ_DEV' declared at 'D:/UP-253257/timer/timer.srcs/sources_1/imports/new/FREQ_DEV.vhd:35' bound to instance 'f0' of component 'FREQ_DEV' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/COUNTER.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'FREQ_DEV' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/FREQ_DEV.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'FREQ_DEV' (1#1) [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/FREQ_DEV.vhd:40]
+INFO: [Synth 8-3491] module 'BCDCNT' declared at 'D:/UP-253257/timer/timer.srcs/sources_1/imports/new/BCDCNT.vhd:35' bound to instance 'b0' of component 'BCDCNT' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/COUNTER.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'BCDCNT' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/BCDCNT.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BCDCNT' (2#1) [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/BCDCNT.vhd:43]
+INFO: [Synth 8-3491] module 'BCDCNT' declared at 'D:/UP-253257/timer/timer.srcs/sources_1/imports/new/BCDCNT.vhd:35' bound to instance 'b1' of component 'BCDCNT' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/COUNTER.vhd:87]
+INFO: [Synth 8-3491] module 'BCDCNT' declared at 'D:/UP-253257/timer/timer.srcs/sources_1/imports/new/BCDCNT.vhd:35' bound to instance 'b2' of component 'BCDCNT' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/COUNTER.vhd:88]
+INFO: [Synth 8-3491] module 'BCDCNT' declared at 'D:/UP-253257/timer/timer.srcs/sources_1/imports/new/BCDCNT.vhd:35' bound to instance 'b3' of component 'BCDCNT' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/COUNTER.vhd:89]
+INFO: [Synth 8-3491] module 'STEROWNIK_WYSWIETLACZ' declared at 'D:/UP-253257/timer/timer.srcs/sources_1/imports/new/STEROWNIK_WYSWIETLACZ.vhd:4' bound to instance 's0' of component 'STEROWNIK_WYSWIETLACZ' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/COUNTER.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'STEROWNIK_WYSWIETLACZ' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/STEROWNIK_WYSWIETLACZ.vhd:17]
+INFO: [Synth 8-3491] module 'COUNTER3B' declared at 'D:/UP-253257/timer/timer.srcs/sources_1/imports/new/COUNTER3B.vhd:5' bound to instance 's0' of component 'COUNTER3B' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/STEROWNIK_WYSWIETLACZ.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'COUNTER3B' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/COUNTER3B.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'COUNTER3B' (3#1) [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/COUNTER3B.vhd:12]
+INFO: [Synth 8-3491] module 'MUX11' declared at 'D:/UP-253257/timer/timer.srcs/sources_1/imports/new/MUX1.vhd:34' bound to instance 's1' of component 'MUX11' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/STEROWNIK_WYSWIETLACZ.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'MUX11' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/MUX1.vhd:43]
+INFO: [Synth 8-226] default block is never used [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/MUX1.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'MUX11' (4#1) [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/MUX1.vhd:43]
+INFO: [Synth 8-3491] module 'MUX2' declared at 'D:/UP-253257/timer/timer.srcs/sources_1/imports/new/MUX2.vhd:34' bound to instance 's2' of component 'MUX2' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/STEROWNIK_WYSWIETLACZ.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'MUX2' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/MUX2.vhd:40]
+INFO: [Synth 8-226] default block is never used [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/MUX2.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'MUX2' (5#1) [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/MUX2.vhd:40]
+INFO: [Synth 8-3491] module 'BINTO4' declared at 'D:/UP-253257/timer/timer.srcs/sources_1/imports/new/BINTO4.vhd:4' bound to instance 's3' of component 'BINTO4' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/STEROWNIK_WYSWIETLACZ.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'BINTO4' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/BINTO4.vhd:9]
+INFO: [Synth 8-226] default block is never used [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/BINTO4.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'BINTO4' (6#1) [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/BINTO4.vhd:9]
+INFO: [Synth 8-3491] module 'BINTO7SEG' declared at 'D:/UP-253257/timer/timer.srcs/sources_1/imports/new/BINTO7SEG.vhd:34' bound to instance 's4' of component 'BINTO7SEG' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/STEROWNIK_WYSWIETLACZ.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'BINTO7SEG' [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/BINTO7SEG.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'BINTO7SEG' (7#1) [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/BINTO7SEG.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'STEROWNIK_WYSWIETLACZ' (8#1) [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/STEROWNIK_WYSWIETLACZ.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'COUNTER' (9#1) [D:/UP-253257/timer/timer.srcs/sources_1/imports/new/COUNTER.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1008.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1008.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1008.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1008.555 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/UP-253257/timer/timer.srcs/constrs_1/imports/tmp/basys3-master.xdc]
+Finished Parsing XDC File [D:/UP-253257/timer/timer.srcs/constrs_1/imports/tmp/basys3-master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/UP-253257/timer/timer.srcs/constrs_1/imports/tmp/basys3-master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/COUNTER_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/COUNTER_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1008.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1008.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1008.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1008.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1008.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1008.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1008.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1008.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1008.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1008.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1009.730 ; gain = 1.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1009.730 ; gain = 1.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1009.730 ; gain = 1.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1009.730 ; gain = 1.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1009.730 ; gain = 1.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1009.730 ; gain = 1.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |     6|
+|4     |LUT2   |     5|
+|5     |LUT3   |     4|
+|6     |LUT4   |    23|
+|7     |LUT5   |     1|
+|8     |LUT6   |     4|
+|9     |FDCE   |    21|
+|10    |FDRE   |    17|
+|11    |IBUF   |     2|
+|12    |OBUF   |    12|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1009.730 ; gain = 1.176
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1009.730 ; gain = 1.176
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1009.730 ; gain = 1.176
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1020.805 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1024.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1024.559 ; gain = 16.004
+INFO: [Common 17-1381] The checkpoint 'D:/UP-253257/timer/timer.runs/synth_1/COUNTER.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file COUNTER_utilization_synth.rpt -pb COUNTER_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  2 11:03:40 2022...

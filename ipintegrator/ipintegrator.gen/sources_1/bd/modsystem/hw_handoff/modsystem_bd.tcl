@@ -165,7 +165,7 @@ proc create_root_design { parentCell } {
 
   # Create ports
   set CLK [ create_bd_port -dir I -type clk -freq_hz 100000000 CLK ]
-  set DIN [ create_bd_port -dir I DIN ]
+  set DIN [ create_bd_port -dir I -from 7 -to 0 -type data DIN ]
   set DOUT [ create_bd_port -dir O -from 7 -to 0 DOUT ]
   set RESET [ create_bd_port -dir I -type rst RESET ]
   set_property -dict [ list \
